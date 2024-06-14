@@ -1,0 +1,26 @@
+{
+  "id": "cs_mattermost_plugin",
+  "name": "CobaltStrike Host Notifier",
+  "description": "A plugin to notify about CobaltStrike host status",
+  "version": "0.1.0",
+  "server": {
+    "executables": {
+      "linux-amd64": "server/dist/plugin-linux-amd64",
+      "darwin-amd64": "server/dist/plugin-darwin-amd64",
+      "windows-amd64": "server/dist/plugin-windows-amd64.exe"
+    }
+  },
+  "settings_schema": {
+    "settings": [
+      {
+        "key": "WebhookURL",
+        "display_name": "Webhook URL",
+        "type": "text",
+        "help_text": "The webhook URL for the Mattermost incoming webhook",
+        "placeholder": "",
+        "default": ""
+      }
+    ]
+  }
+}
+
